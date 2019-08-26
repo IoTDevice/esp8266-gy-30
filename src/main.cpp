@@ -44,7 +44,7 @@ void handleDeviceInfo(){
   String message;
   message = "{\n";
   message += "\"name\":\""+deviceName +"\",\n";
-  message += "\"model\":\"com.iotserv.devices.values\",\n";
+  message += "\"model\":\"com.iotserv.devices.lightLevel\",\n";
   message += "\"mac\":\""+WiFi.macAddress()+"\",\n";
   message += "\"id\":\""+String(ESP.getFlashChipId())+"\",\n";
   message += "\"ui-support\":[\"web\",\"native\"],\n";
@@ -75,7 +75,7 @@ void handleNotFound(){
 }
 
 void setup() {
-  Wire.begin();
+  Wire.begin(4, 5);
   lightMeter.begin(BH1750::CONTINUOUS_HIGH_RES_MODE);
   WiFi.mode(WIFI_STA);
   // 选取一种连接路由器的方式 
