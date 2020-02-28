@@ -20,6 +20,8 @@ deploy:
   provider: releases
   api_key:
     secure: fMZsOWaBH9lrRs8s81WrwIGpBHGddYSwcbFI2HU32EEALxEzTnw8xrUMXPVgaTQjrKwhMc/ToK5AOsZLpcpd+KTluGSH3vO+hbY0n8GcKbychATE+pT5lSx2v3HK5YbhGP1/YNthoYbVZ361pyUZ2YyHFVgt01DYEjNyvHo7iBOnM9aJm9mYGQ938FGoSAKjUGXM5Rrm+bcBQg9hdDB1LiPjAAbrr1H2mL0WulT4RErStRWcMvHgwQafmqAQnWRvAVcbYIJUL+6ZiAM9xZGTP7EMEVwwBAgsyrdM4aJcBBEBSjbrl//rFMelXg6UJDAxzJzM1+lCtXtSS63I4u97vSg9H2sR4wPXofT+lBozxrqTCyFiUHCTUhtmJcpwivfzLLea/eJhIgSKgtZDBKvlO+/AtKpAwpHSdBS6vAhWKnytcju7UQ3p9WOq+qn+nfLTFCQcqlG37LD/W3lnZnlEmZSHSf8NG4w8tEvl9jOsylEtlf5UcXt01OWJ7FbiwGAPvEXu5SQZCNK2HP9b4Q7M9+xJjpGSlmDRj4cA7zHZ3QdgMMP1iswbCmLGa6RhFAYMitoFdqtJaUZSxC53pX5LM4zXQnjBAmoDaC/4fDizNMMyVY832ddtr0j3PcQchrU5Sk0lMOj0pPd/Y4nvoRhapBLMSBsLeFo1JuLWqKYbHgk=
-  file: ''
+  file: 'build/.pio/build/d1/firmware.bin'
+  skip_cleanup: true
   on:
-    repo: IoTDevice/esp8266-gy-30
+    repo: IoTDevice/ESP8266-GY-30
+    tags: true
