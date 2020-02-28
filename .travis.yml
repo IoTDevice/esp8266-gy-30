@@ -23,5 +23,5 @@ deploy:
   file: 'build/.pio/build/d1/firmware.bin'
   skip_cleanup: true
   on:
-    repo: IoTDevice/ESP8266-GY-30
+    repo: IoTDevice/esp8266-gy-30
     tags: true
